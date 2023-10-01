@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_common_digital_streams_cards",
+  "info": {
+    "name": "Digital Streams Card",
+    "icon": "atom",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "StreamLogo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    },
+    "StreamTitle": {
+      "type": "string",
+      "required": true
+    },
+    "LandingPageURL": {
+      "type": "string"
+    },
+    "StreamDescription": {
+      "type": "richtext"
+    },
+    "StreamValuePoint": {
+      "type": "string"
+    },
+    "cardBgColorHexCode": {
+      "type": "string"
+    },
+    "FeaturePoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list"
+    },
+    "LearnMore": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_common_tabswithcards",
+  "info": {
+    "name": "tabswithcards",
+    "icon": "building"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partners.partner-card"
+    }
+  }
+}

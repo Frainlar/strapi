@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_partners_partnership_steps",
+  "info": {
+    "name": "Partnership Steps",
+    "icon": "battery-three-quarters",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partners.steps"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

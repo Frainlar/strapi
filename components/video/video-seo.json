@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_video_video_seos",
+  "info": {
+    "name": "VideoSEO",
+    "icon": "balance-scale-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ContentUrl": {
+      "type": "string"
+    },
+    "EmbedUrl": {
+      "type": "string"
+    },
+    "ThumbnailUrls": {
+      "type": "component",
+      "repeatable": true,
+      "component": "video.thumbnail-urls"
+    },
+    "UploadDate": {
+      "type": "datetime"
+    }
+  }
+}

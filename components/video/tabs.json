@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_video_tabs",
+  "info": {
+    "name": "tabs",
+    "icon": "calculator",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tabName": {
+      "type": "string"
+    },
+    "tabId": {
+      "type": "string"
+    },
+    "subTabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "video.sub-tabs"
+    }
+  }
+}

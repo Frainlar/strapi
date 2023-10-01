@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_resources_e_book_form_fields",
+  "info": {
+    "name": "EBookFormFields",
+    "icon": "band-aid"
+  },
+  "options": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "FormTitle": {
+      "type": "string"
+    },
+    "SubmitButton": {
+      "type": "string"
+    }
+  }
+}

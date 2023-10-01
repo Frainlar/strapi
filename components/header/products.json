@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_header_products",
+  "info": {
+    "name": "Products",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.logo"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "css": {
+      "type": "string"
+    },
+    "redirectURL": {
+      "type": "string"
+    },
+    "tagPhrase": {
+      "type": "string"
+    }
+  }
+}

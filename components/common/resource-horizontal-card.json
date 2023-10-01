@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_common_resource_horizontal_cards",
+  "info": {
+    "name": "ResourceHorizontalCard",
+    "icon": "campground"
+  },
+  "options": {},
+  "attributes": {
+    "ImageURL": {
+      "type": "string"
+    },
+    "PageURL": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Tag": {
+      "type": "string"
+    },
+    "Author": {
+      "type": "string"
+    }
+  }
+}

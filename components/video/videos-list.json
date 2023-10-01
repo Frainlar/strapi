@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_video_videos_lists",
+  "info": {
+    "name": "videosList",
+    "icon": "calendar-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subTabId": {
+      "type": "string"
+    },
+    "videos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "video.videos"
+    },
+    "tabId": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "collectionName": "pageSEO",
+  "info": {
+    "name": "pageSEO",
+    "icon": "bacon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "PageTitle": {
+      "type": "string"
+    },
+    "PageDescription": {
+      "type": "richtext"
+    },
+    "CanonicalTag": {
+      "type": "string"
+    },
+    "ThumbnailImageURL": {
+      "type": "string"
+    },
+    "BreadCrumb": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.bread-crumb"
+    },
+    "PageURL": {
+      "type": "string"
+    }
+  }
+}

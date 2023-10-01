@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_common_stream_features",
+  "info": {
+    "name": "StreamFeatures",
+    "icon": "blender-phone",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "CTAUrl": {
+      "type": "string"
+    },
+    "CTAText": {
+      "type": "string"
+    },
+    "ImageURL": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "get_starteds",
+  "info": {
+    "name": "get-started",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "pageHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "GetStartedLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.card"
+    }
+  }
+}

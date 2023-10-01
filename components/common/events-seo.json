@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_events_seos",
+  "info": {
+    "name": "EventsSEO",
+    "icon": "biohazard"
+  },
+  "options": {},
+  "attributes": {
+    "EventName": {
+      "type": "string"
+    },
+    "StartDate": {
+      "type": "datetime"
+    },
+    "EndDate": {
+      "type": "datetime"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "WebUrl": {
+      "type": "string"
+    }
+  }
+}

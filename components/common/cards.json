@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_common_cards",
+  "info": {
+    "name": "cards",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "imageUrl": {
+      "type": "string"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaUrl": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_common_stream_color_cards",
+  "info": {
+    "name": "StreamColorCard",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "LogoURL": {
+      "type": "string"
+    },
+    "Stream": {
+      "type": "enumeration",
+      "enum": [
+        "maps",
+        "projects",
+        "process",
+        "labs",
+        "mines",
+        "dxaas"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "LandingPageURL": {
+      "type": "string"
+    }
+  }
+}

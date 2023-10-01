@@ -1,0 +1,157 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "name": "Header",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DigitalMaps": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.streams-section"
+    },
+    "DigitalMapsFeatureList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.navbar-card"
+    },
+    "DigitalProjects": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.streams-section"
+    },
+    "DigitalProjectsFeatureList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.navbar-card"
+    },
+    "Resources": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.resources"
+    },
+    "ResourcesList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.navbar-card"
+    },
+    "DigitalProcess": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.streams-section"
+    },
+    "DigitalLabs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.streams-section"
+    },
+    "DigitalMines": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.streams-section"
+    },
+    "DigitalProcessFeatureList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.navbar-card"
+    },
+    "DigitalLabsFeatureList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.navbar-card"
+    },
+    "DigitalMinesFeatureList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.navbar-card"
+    },
+    "Partners": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.resources"
+    },
+    "PartnersList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.navbar-card"
+    },
+    "Support": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.resources"
+    },
+    "SupportList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.navbar-card"
+    },
+    "Company": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.resources"
+    },
+    "CompanyList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.navbar-card"
+    },
+    "PrimaryCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "SecondaryCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "StreamsTitle": {
+      "type": "string"
+    },
+    "FeatureTitle": {
+      "type": "string"
+    },
+    "Topbar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "Logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image-button"
+    },
+    "OtherSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.other-seo"
+    },
+    "PrimaryCTAAmplitude": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.amplitude-tracking"
+    },
+    "SecondaryCTAAmplitudeTracking": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.amplitude-tracking"
+    },
+    "Products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.products"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    }
+  }
+}

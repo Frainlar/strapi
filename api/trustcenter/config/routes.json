@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/trustcenters",
+      "handler": "trustcenter.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trustcenters/count",
+      "handler": "trustcenter.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/trustcenters/:id",
+      "handler": "trustcenter.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/trustcenters",
+      "handler": "trustcenter.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/trustcenters/:id",
+      "handler": "trustcenter.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/trustcenters/:id",
+      "handler": "trustcenter.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

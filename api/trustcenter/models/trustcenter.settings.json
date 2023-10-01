@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trustcenters",
+  "info": {
+    "name": "Trustcenter",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "pageHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "issuedFrom": {
+      "type": "string"
+    },
+    "trustCenterContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "trust-center.trust-center-content"
+    },
+    "idList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "trust-center.id-list"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "TableOfContentsHeading": {
+      "type": "string"
+    },
+    "DocumentTitle": {
+      "type": "string"
+    }
+  }
+}

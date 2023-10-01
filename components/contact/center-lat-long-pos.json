@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_contact_center_lat_long_pos",
+  "info": {
+    "name": "CenterLatLongPos",
+    "icon": "map-marker"
+  },
+  "options": {},
+  "attributes": {
+    "Latitude": {
+      "type": "float"
+    },
+    "Longitude": {
+      "type": "float"
+    }
+  }
+}

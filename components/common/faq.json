@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_faqs",
+  "info": {
+    "name": "FAQ",
+    "icon": "arrow-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "richtext"
+    },
+    "Answer": {
+      "type": "richtext"
+    }
+  }
+}

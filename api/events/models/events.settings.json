@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "events",
+  "info": {
+    "name": "events",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bannerSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "highlightedEvent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "otherEvents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.cards"
+    },
+    "bannerVideo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "events.video"
+    },
+    "featuredWebinars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.card"
+    },
+    "featuredWebinarsTitle": {
+      "type": "string"
+    },
+    "ctaSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.cta-card"
+    },
+    "otherEventsTitle": {
+      "type": "string"
+    },
+    "PageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    }
+  }
+}

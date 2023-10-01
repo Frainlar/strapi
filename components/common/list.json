@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_lists",
+  "info": {
+    "name": "List",
+    "icon": "angle-double-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "listItem": {
+      "type": "string"
+    },
+    "PageUrl": {
+      "type": "string"
+    }
+  }
+}

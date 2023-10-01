@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_products_products_banners",
+  "info": {
+    "name": "ProductsBanner",
+    "icon": "couch",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "DigitalStreamTitle": {
+      "type": "string"
+    },
+    "BannerHeadline": {
+      "type": "text"
+    },
+    "BannerSubHeadline": {
+      "type": "text"
+    },
+    "ReviewStatement": {
+      "type": "text"
+    },
+    "ReviewImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image"
+    },
+    "BannerImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    },
+    "ProductsBannerForm": {
+      "type": "component",
+      "repeatable": false,
+      "component": "products.products-banner-form"
+    },
+    "RatingValue": {
+      "type": "decimal"
+    },
+    "ReviewCount": {
+      "type": "integer"
+    }
+  }
+}

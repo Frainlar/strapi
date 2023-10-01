@@ -1,0 +1,63 @@
+{
+  "kind": "singleType",
+  "collectionName": "partner_homes",
+  "info": {
+    "name": "Partner Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "PageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "PartnershipOpportunities": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partners.partnership-opportunities"
+    },
+    "TrustedByLogos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image"
+    },
+    "FAQList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.faq"
+    },
+    "PartnershipSteps": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partners.partnership-steps"
+    },
+    "ctacard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.cta-card"
+    },
+    "previouslyseenontitle": {
+      "type": "string"
+    },
+    "faqtitle": {
+      "type": "string"
+    },
+    "PartnerLogoTitle": {
+      "type": "string"
+    },
+    "FAQSectionTitle": {
+      "type": "string"
+    }
+  }
+}

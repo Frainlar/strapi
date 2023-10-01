@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_common_major_resource_cards",
+  "info": {
+    "name": "MajorResourceCards",
+    "icon": "bolt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "CTAUrl": {
+      "type": "string"
+    },
+    "OpenNewTab": {
+      "type": "boolean"
+    },
+    "DigitalStream": {
+      "type": "enumeration",
+      "enum": [
+        "maps",
+        "projects",
+        "process",
+        "labs",
+        "mines",
+        "dxaas"
+      ]
+    }
+  }
+}

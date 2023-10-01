@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_events_speakers_lists",
+  "info": {
+    "name": "speakersList",
+    "icon": "chevron-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "imageUrl": {
+      "type": "string"
+    },
+    "imageWidth": {
+      "type": "integer"
+    },
+    "imageHeight": {
+      "type": "integer"
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "speakerName": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    }
+  }
+}

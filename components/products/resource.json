@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_products_resources",
+  "info": {
+    "name": "Resource",
+    "icon": "calendar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "ResourceTitle": {
+      "type": "string"
+    },
+    "CTAUrl": {
+      "type": "string"
+    },
+    "OpenNewTab": {
+      "type": "boolean"
+    }
+  }
+}

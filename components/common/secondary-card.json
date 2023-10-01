@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_common_secondary_cards",
+  "info": {
+    "name": "SecondaryCard",
+    "icon": "angle-up"
+  },
+  "options": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "FeaturesCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.features-card"
+    }
+  }
+}

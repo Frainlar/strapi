@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_events_videos",
+  "info": {
+    "name": "video",
+    "icon": "battery-full"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "videoUrl": {
+      "type": "string"
+    }
+  }
+}

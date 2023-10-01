@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_common_quiz_choices",
+  "info": {
+    "name": "QuizChoices",
+    "icon": "backspace",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SliderChoices": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.slider-choices"
+    },
+    "QuestionType": {
+      "type": "enumeration",
+      "enum": [
+        "SingleChoice",
+        "MultipleChoice",
+        "Slider",
+        "Email",
+        "Textbox"
+      ]
+    },
+    "Question": {
+      "type": "text"
+    },
+    "QuizValues": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.quiz-values"
+    }
+  }
+}

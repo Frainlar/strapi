@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_bots",
+  "info": {
+    "name": "Bots",
+    "icon": "bus-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "BotCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.bot-cards"
+    }
+  }
+}

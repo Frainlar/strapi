@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_multi_card_carousels",
+  "info": {
+    "name": "MultiCardCarousel",
+    "icon": "bread-slice"
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "ProductOfferingList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.stream-color-card"
+    }
+  }
+}

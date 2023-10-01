@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_events_events",
+  "info": {
+    "name": "events",
+    "icon": "book-dead"
+  },
+  "options": {},
+  "attributes": {
+    "eventName": {
+      "type": "string"
+    },
+    "eventValue": {
+      "type": "string"
+    }
+  }
+}

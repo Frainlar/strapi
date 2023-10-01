@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "strategic_partners",
+  "info": {
+    "name": "Strategic Partners",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "PageSimpleHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-simple-header"
+    },
+    "ValuePropsWithoutImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.value-props-without-image"
+    },
+    "StrategicPartners": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.value-props-without-image"
+    },
+    "CTACard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.cta-card"
+    }
+  }
+}

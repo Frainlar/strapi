@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_partners_partner_registration_forms",
+  "info": {
+    "name": "PartnerRegistrationForm",
+    "icon": "baby-carriage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FormTitle": {
+      "type": "string"
+    },
+    "FormSubTitle": {
+      "type": "string"
+    },
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Organization": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "SubmitButton": {
+      "type": "string"
+    },
+    "PrivacyStatement": {
+      "type": "richtext"
+    },
+    "ThanksMsg": {
+      "type": "string"
+    },
+    "redirectURL": {
+      "type": "string"
+    }
+  }
+}

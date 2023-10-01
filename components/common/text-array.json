@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_text_arrays",
+  "info": {
+    "name": "TextArray",
+    "icon": "calendar-week"
+  },
+  "options": {},
+  "attributes": {
+    "ImageURL": {
+      "type": "string"
+    }
+  }
+}

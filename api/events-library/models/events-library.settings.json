@@ -1,0 +1,125 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events_libraries",
+  "info": {
+    "name": "events-library",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categorySlug": {
+      "type": "string"
+    },
+    "eventSlug": {
+      "type": "string"
+    },
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "eventDate": {
+      "type": "datetime"
+    },
+    "speakers": {
+      "type": "component",
+      "repeatable": false,
+      "component": "events.speakers"
+    },
+    "featuredEventsHeading": {
+      "type": "string"
+    },
+    "featuredEventsSubHeading": {
+      "type": "string"
+    },
+    "events": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.card"
+    },
+    "registerSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "form": {
+      "type": "component",
+      "repeatable": false,
+      "component": "events.form"
+    },
+    "accessReportSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.card"
+    },
+    "featuredArticlesSectionHeading": {
+      "type": "string"
+    },
+    "featureArticlesSectionSubheading": {
+      "type": "string"
+    },
+    "featuredArticles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.card"
+    },
+    "discussionSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "events.discussion-section"
+    },
+    "alternateBannerText": {
+      "type": "string"
+    },
+    "alternateCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.cta"
+    },
+    "eventVideo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "events.video"
+    },
+    "ToggleFeaturedEvents": {
+      "type": "boolean"
+    },
+    "PageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "EventsSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.events-seo"
+    },
+    "TrustedByStatement": {
+      "type": "string"
+    },
+    "TrustedByLogos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.logo"
+    },
+    "IsRegistrationFormVisible": {
+      "type": "boolean"
+    },
+    "IsVideoSectionVisible": {
+      "type": "boolean"
+    },
+    "SectionID": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.section-visibility"
+    },
+    "IsPodcastPage": {
+      "type": "boolean"
+    }
+  }
+}

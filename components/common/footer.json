@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_common_footers",
+  "info": {
+    "name": "footer",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "NavItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.external-button"
+    }
+  }
+}

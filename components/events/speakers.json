@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_events_speakers",
+  "info": {
+    "name": "speakers",
+    "icon": "calendar-check"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "speakersList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "events.speakers-list"
+    }
+  }
+}

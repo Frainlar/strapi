@@ -1,0 +1,75 @@
+{
+  "collectionName": "components_common_landing_page_headers",
+  "info": {
+    "name": "Landing Page Header",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string",
+      "required": true
+    },
+    "subHeading": {
+      "type": "richtext",
+      "required": true
+    },
+    "primaryCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "secondaryCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "BelowCTAText": {
+      "type": "string"
+    },
+    "Tag": {
+      "type": "string"
+    },
+    "PrimaryColor": {
+      "type": "string"
+    },
+    "SecondaryColor": {
+      "type": "string"
+    },
+    "ImageURL": {
+      "type": "string"
+    },
+    "header2": {
+      "type": "string"
+    },
+    "ImageWidth": {
+      "type": "string"
+    },
+    "ImageHeight": {
+      "type": "string"
+    },
+    "alternateImageUrl": {
+      "type": "string"
+    },
+    "BannerHeadline": {
+      "type": "string"
+    },
+    "BannerSubHeadline": {
+      "type": "text"
+    },
+    "ReviewStatement": {
+      "type": "text"
+    },
+    "ReviewImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image"
+    },
+    "BannerImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    }
+  }
+}

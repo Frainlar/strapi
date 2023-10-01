@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_common_bread_crumbs",
+  "info": {
+    "name": "BreadCrumb",
+    "icon": "arrows-alt-v",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "item": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    }
+  }
+}

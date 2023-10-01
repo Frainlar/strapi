@@ -1,0 +1,94 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_companies",
+  "info": {
+    "name": "About Company",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "Values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partners.partnership-steps"
+    },
+    "FastFacts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partners.partnership-steps"
+    },
+    "TrustedByLogos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image"
+    },
+    "RelatedResources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.card"
+    },
+    "PageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "class": {
+      "type": "string"
+    },
+    "WhitepaperTitle": {
+      "type": "string"
+    },
+    "vision": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.vision"
+    },
+    "ourcustomerstitle": {
+      "type": "string"
+    },
+    "relatedresourcestitle": {
+      "type": "string"
+    },
+    "viewallresources": {
+      "type": "component",
+      "repeatable": false,
+      "component": "resources.viewallresources"
+    },
+    "ctacard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.cta-card"
+    },
+    "AcademicAlliance": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.academic-alliance"
+    },
+    "DigitalDhaanam": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.academic-alliance"
+    },
+    "AboutKTern": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.about-k-tern"
+    },
+    "LatestNewsSectionTitle": {
+      "type": "string"
+    }
+  }
+}

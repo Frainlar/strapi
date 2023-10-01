@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_common_minor_resource_cards",
+  "info": {
+    "name": "MinorResourceCard",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "ResourcesList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.resource-horizontal-card"
+    }
+  }
+}

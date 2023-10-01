@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_header_streams_sections",
+  "info": {
+    "name": "StreamsSection",
+    "icon": "caret-down"
+  },
+  "options": {},
+  "attributes": {
+    "StreamTitle": {
+      "type": "string"
+    },
+    "StreamDescription": {
+      "type": "string"
+    },
+    "redirectURL": {
+      "type": "string"
+    },
+    "Icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.logo"
+    }
+  }
+}

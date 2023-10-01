@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_video_thumbnail_urls",
+  "info": {
+    "name": "ThumbnailUrls",
+    "icon": "battery-empty"
+  },
+  "options": {},
+  "attributes": {
+    "Url": {
+      "type": "string"
+    }
+  }
+}

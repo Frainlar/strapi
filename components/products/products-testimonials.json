@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_products_products_testimonials",
+  "info": {
+    "name": "ProductsTestimonials",
+    "icon": "burn"
+  },
+  "options": {},
+  "attributes": {
+    "TagTitle": {
+      "type": "string"
+    },
+    "SectionTitle": {
+      "type": "string"
+    },
+    "Testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.testimonial"
+    }
+  }
+}

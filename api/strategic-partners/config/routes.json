@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/strategic-partners",
+      "handler": "strategic-partners.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/strategic-partners",
+      "handler": "strategic-partners.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/strategic-partners",
+      "handler": "strategic-partners.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

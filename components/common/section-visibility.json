@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_common_section_visibilities",
+  "info": {
+    "name": "SectionVisibility",
+    "icon": "blender",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FeaturedPartners": {
+      "type": "string"
+    },
+    "Speakers": {
+      "type": "string"
+    },
+    "FeaturedEvents": {
+      "type": "string"
+    },
+    "EventVideo": {
+      "type": "string"
+    },
+    "ValueReport": {
+      "type": "string"
+    },
+    "Resources": {
+      "type": "string"
+    },
+    "SocialMediaFeed": {
+      "type": "string"
+    },
+    "Registration": {
+      "type": "string"
+    }
+  }
+}

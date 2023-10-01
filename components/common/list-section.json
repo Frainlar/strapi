@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_common_list_sections",
+  "info": {
+    "name": "ListSection",
+    "icon": "bold",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "OfferingsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list-component"
+    },
+    "ImagesList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list-component"
+    }
+  }
+}

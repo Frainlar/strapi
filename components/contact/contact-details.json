@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_contact_contact_details",
+  "info": {
+    "name": "ContactDetails",
+    "icon": "balance-scale-left"
+  },
+  "options": {},
+  "attributes": {
+    "Country": {
+      "type": "string"
+    },
+    "ContactNumber": {
+      "type": "string"
+    }
+  }
+}

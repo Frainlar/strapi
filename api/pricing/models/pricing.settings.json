@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "pricings",
+  "info": {
+    "name": "Pricing",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "PageHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "PricingCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "pricing.pricing-card"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "LogoSectionTitle": {
+      "type": "string"
+    },
+    "LogoSectionContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image"
+    },
+    "KeyFeatures": {
+      "type": "string"
+    },
+    "Values": {
+      "type": "string"
+    },
+    "Bots": {
+      "type": "string"
+    },
+    "Users": {
+      "type": "string"
+    },
+    "FAQSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.faq"
+    },
+    "FAQTitle": {
+      "type": "string"
+    },
+    "PricingTerms": {
+      "type": "richtext"
+    }
+  }
+}

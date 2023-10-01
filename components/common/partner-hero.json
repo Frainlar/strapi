@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_common_partner_heroes",
+  "info": {
+    "name": "PartnerHero",
+    "icon": "capsules"
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "SubHeading": {
+      "type": "string"
+    },
+    "CTAButtons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.external-button"
+    },
+    "PartnerLogoURL": {
+      "type": "string"
+    }
+  }
+}

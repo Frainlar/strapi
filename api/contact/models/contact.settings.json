@@ -1,0 +1,62 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "Contact",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ContactFormFields": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.contact-form-fields"
+    },
+    "CampaignName": {
+      "type": "string"
+    },
+    "PageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "PageTitle": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "richtext"
+    },
+    "Email": {
+      "type": "richtext"
+    },
+    "Address": {
+      "type": "richtext"
+    },
+    "ContactMessage": {
+      "type": "richtext"
+    },
+    "AddressLines": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.address-line"
+    },
+    "AddressZoom": {
+      "type": "integer"
+    },
+    "MapPosition": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.center-lat-long-pos"
+    },
+    "LocationsImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    }
+  }
+}

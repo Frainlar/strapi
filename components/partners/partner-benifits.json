@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_partners_partner_benifits",
+  "info": {
+    "name": "PartnerBenifits",
+    "icon": "credit-card"
+  },
+  "options": {},
+  "attributes": {
+    "mainHeader": {
+      "type": "string"
+    },
+    "secondary1": {
+      "type": "string"
+    },
+    "secondary2": {
+      "type": "string"
+    },
+    "secondary3": {
+      "type": "string"
+    },
+    "tableContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partners.partner-benefits"
+    }
+  }
+}

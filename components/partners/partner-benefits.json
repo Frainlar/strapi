@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_partners_partner_benefits",
+  "info": {
+    "name": "PartnerBenefits",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "BenefitTitle": {
+      "type": "string"
+    },
+    "Registered": {
+      "type": "boolean"
+    },
+    "Authorized": {
+      "type": "boolean"
+    },
+    "Preferred": {
+      "type": "boolean"
+    }
+  }
+}

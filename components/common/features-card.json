@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_common_features_cards",
+  "info": {
+    "name": "FeaturesCard",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "LandingURL": {
+      "type": "string"
+    },
+    "ImageURL": {
+      "type": "string"
+    },
+    "CTAText": {
+      "type": "string"
+    },
+    "CTAURL": {
+      "type": "string"
+    }
+  }
+}

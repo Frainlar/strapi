@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_webinar_form_components",
+  "info": {
+    "name": "FormComponents",
+    "icon": "baseball-ball",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FormTitle": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "FullName": {
+      "type": "string"
+    },
+    "SubmitButton": {
+      "type": "string"
+    },
+    "FormId": {
+      "type": "string"
+    },
+    "MailingListId": {
+      "type": "string"
+    },
+    "UserConsent": {
+      "type": "string"
+    },
+    "PrivacyStatement": {
+      "type": "richtext"
+    }
+  }
+}

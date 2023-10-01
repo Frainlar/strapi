@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_header_resources",
+  "info": {
+    "name": "Resources",
+    "icon": "arrow-alt-circle-down",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "string"
+    },
+    "WhatsNewSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "header.whats-new-card"
+    }
+  }
+}

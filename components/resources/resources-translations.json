@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_resources_resources_translations",
+  "info": {
+    "name": "ResourcesTranslations",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "Search": {
+      "type": "string"
+    },
+    "Resources": {
+      "type": "string"
+    }
+  }
+}

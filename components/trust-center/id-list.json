@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_trust_center_id_lists",
+  "info": {
+    "name": "idList",
+    "icon": "stream"
+  },
+  "options": {},
+  "attributes": {
+    "idURL": {
+      "type": "string"
+    },
+    "idText": {
+      "type": "string"
+    }
+  }
+}

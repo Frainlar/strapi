@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_viewallresources",
+  "info": {
+    "name": "viewallresources",
+    "icon": "coins",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "ctaurl": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_common_amplitude_trackings",
+  "info": {
+    "name": "AmplitudeTracking",
+    "icon": "adjust",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "EventName": {
+      "type": "string"
+    },
+    "SectionName": {
+      "type": "string"
+    },
+    "CustomerPhase": {
+      "type": "string"
+    },
+    "PartnerPhase": {
+      "type": "string"
+    },
+    "CustomerScore": {
+      "type": "string"
+    },
+    "PartnerScore": {
+      "type": "string"
+    },
+    "Maps": {
+      "type": "string"
+    },
+    "Projects": {
+      "type": "string"
+    },
+    "Process": {
+      "type": "string"
+    },
+    "Labs": {
+      "type": "string"
+    },
+    "Mines": {
+      "type": "string"
+    },
+    "InterestScoreAggregate": {
+      "type": "string"
+    }
+  }
+}

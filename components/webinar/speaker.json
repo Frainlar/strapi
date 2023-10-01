@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_webinar_speakers",
+  "info": {
+    "name": "Speaker",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "AvatarURL": {
+      "type": "string"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "PopoverContent": {
+      "type": "text"
+    }
+  }
+}

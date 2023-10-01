@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_contact_address_lines",
+  "info": {
+    "name": "AddressLine",
+    "icon": "map-marker-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Address": {
+      "type": "richtext"
+    },
+    "Latitude": {
+      "type": "float"
+    },
+    "Longitude": {
+      "type": "float"
+    },
+    "Highlight": {
+      "type": "boolean"
+    }
+  }
+}

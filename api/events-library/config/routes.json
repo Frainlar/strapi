@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/events-libraries",
+      "handler": "events-library.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/events-libraries/count",
+      "handler": "events-library.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/events-libraries/:id",
+      "handler": "events-library.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/events-libraries",
+      "handler": "events-library.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/events-libraries/:id",
+      "handler": "events-library.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/events-libraries/:id",
+      "handler": "events-library.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

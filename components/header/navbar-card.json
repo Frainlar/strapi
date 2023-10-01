@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_header_navbar_cards",
+  "info": {
+    "name": "NavbarCard",
+    "icon": "biking",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.logo"
+    },
+    "redirectURL": {
+      "type": "string"
+    },
+    "OpenInNewTab": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_common_banner_forms",
+  "info": {
+    "name": "BannerForm",
+    "icon": "arrows-alt-h",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "EmailPlaceholder": {
+      "type": "string"
+    },
+    "FormButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "ReviewStatement": {
+      "type": "string"
+    },
+    "Logos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.logo"
+    }
+  }
+}

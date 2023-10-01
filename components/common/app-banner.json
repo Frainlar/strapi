@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_common_app_banners",
+  "info": {
+    "name": "AppBanner",
+    "icon": "bed",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SectionHeading": {
+      "type": "string"
+    },
+    "ImageURL": {
+      "type": "string"
+    },
+    "Form": {
+      "type": "component",
+      "repeatable": false,
+      "component": "products.products-banner-form"
+    }
+  }
+}

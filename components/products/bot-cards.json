@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_products_bot_cards",
+  "info": {
+    "name": "BotCards",
+    "icon": "broom"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    }
+  }
+}

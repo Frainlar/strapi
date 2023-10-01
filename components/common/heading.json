@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_headings",
+  "info": {
+    "name": "Heading",
+    "icon": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "isCards": {
+      "type": "boolean"
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}

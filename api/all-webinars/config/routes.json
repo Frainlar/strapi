@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/all-webinars",
+      "handler": "all-webinars.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/all-webinars",
+      "handler": "all-webinars.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/all-webinars",
+      "handler": "all-webinars.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

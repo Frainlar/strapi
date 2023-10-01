@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_common_value_props_without_images",
+  "info": {
+    "name": "ValuePropsWithoutImage",
+    "icon": "book-reader"
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "SubHeading": {
+      "type": "string"
+    },
+    "ImageFeatureCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image-feature-card"
+    }
+  }
+}

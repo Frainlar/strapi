@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"e7fd2327cdba4c6f8e44896a2c58a72d","collectionName":"composers","type":"collection"}

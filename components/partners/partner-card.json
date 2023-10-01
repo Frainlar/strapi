@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_partners_partner_cards",
+  "info": {
+    "name": "PartnerCard",
+    "icon": "backward",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ImageURL": {
+      "type": "string"
+    },
+    "CardTitle": {
+      "type": "string"
+    },
+    "CardDescription": {
+      "type": "richtext"
+    },
+    "PageURL": {
+      "type": "string"
+    },
+    "ImageWidth": {
+      "type": "string"
+    },
+    "ImageHeight": {
+      "type": "string"
+    },
+    "CTAText": {
+      "type": "string"
+    }
+  }
+}

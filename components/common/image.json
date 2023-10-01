@@ -1,0 +1,25 @@
+{
+  "collectionName": "images",
+  "info": {
+    "name": "Image",
+    "icon": "border-all",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "imageURL": {
+      "type": "string",
+      "required": true
+    },
+    "imageDescription": {
+      "type": "string",
+      "required": true
+    },
+    "height": {
+      "type": "integer"
+    },
+    "width": {
+      "type": "integer"
+    }
+  }
+}

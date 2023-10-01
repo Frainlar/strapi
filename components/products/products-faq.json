@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_products_products_faqs",
+  "info": {
+    "name": "ProductsFAQ",
+    "icon": "binoculars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "string"
+    },
+    "FAQ": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.faq"
+    },
+    "TagTitle": {
+      "type": "string"
+    }
+  }
+}

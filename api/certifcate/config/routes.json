@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/certifcates",
+      "handler": "certifcate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/certifcates/count",
+      "handler": "certifcate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/certifcates/:id",
+      "handler": "certifcate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/certifcates",
+      "handler": "certifcate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/certifcates/:id",
+      "handler": "certifcate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/certifcates/:id",
+      "handler": "certifcate.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

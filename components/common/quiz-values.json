@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_quiz_values",
+  "info": {
+    "name": "QuizValues",
+    "icon": "bicycle"
+  },
+  "options": {},
+  "attributes": {
+    "Value": {
+      "type": "text"
+    },
+    "Score": {
+      "type": "integer"
+    }
+  }
+}

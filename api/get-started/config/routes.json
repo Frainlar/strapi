@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/get-started",
+      "handler": "get-started.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/get-started",
+      "handler": "get-started.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/get-started",
+      "handler": "get-started.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

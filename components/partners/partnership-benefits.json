@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_partners_partnership_benefits",
+  "info": {
+    "name": "PartnershipBenefits",
+    "icon": "assistive-listening-systems",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "BenefitContent": {
+      "type": "text"
+    }
+  }
+}

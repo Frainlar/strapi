@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_common_events",
+  "info": {
+    "name": "Event",
+    "icon": "border-none",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "page_source": {
+      "type": "string"
+    },
+    "event_name": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "customer_phase": {
+      "type": "string"
+    },
+    "partner_phase": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "customer_score": {
+      "type": "decimal"
+    },
+    "partner_score": {
+      "type": "decimal"
+    },
+    "maps": {
+      "type": "decimal"
+    },
+    "projects": {
+      "type": "decimal"
+    },
+    "process": {
+      "type": "decimal"
+    },
+    "labs": {
+      "type": "decimal"
+    },
+    "mines": {
+      "type": "decimal"
+    },
+    "interest_score": {
+      "type": "decimal"
+    }
+  }
+}

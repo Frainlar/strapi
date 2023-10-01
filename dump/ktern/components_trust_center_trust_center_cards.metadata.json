@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"585c7effb3cd4fa6a7454da76cfa5c0c","collectionName":"components_trust_center_trust_center_cards","type":"collection"}

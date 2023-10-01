@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_products_products_banner_forms",
+  "info": {
+    "name": "ProductsBannerForm",
+    "icon": "battery-quarter"
+  },
+  "options": {},
+  "attributes": {
+    "EmailPlaceholder": {
+      "type": "string"
+    },
+    "ButtonPlaceholder": {
+      "type": "string"
+    },
+    "FormId": {
+      "type": "string"
+    },
+    "MailingListId": {
+      "type": "string"
+    }
+  }
+}

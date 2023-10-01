@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/customer-success-stories",
+      "handler": "customer-success-stories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customer-success-stories/count",
+      "handler": "customer-success-stories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/customer-success-stories/:id",
+      "handler": "customer-success-stories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/customer-success-stories",
+      "handler": "customer-success-stories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/customer-success-stories/:id",
+      "handler": "customer-success-stories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/customer-success-stories/:id",
+      "handler": "customer-success-stories.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

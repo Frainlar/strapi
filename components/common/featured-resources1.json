@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_featured_resources1s",
+  "info": {
+    "name": "FeaturedResources1",
+    "icon": "calendar-times"
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "MajorResourceCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.major-resource-cards"
+    }
+  }
+}

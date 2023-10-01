@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_events_forms",
+  "info": {
+    "name": "form",
+    "icon": "code-branch",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "events": {
+      "type": "string"
+    },
+    "eventsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "events.events"
+    },
+    "submitButton": {
+      "type": "string"
+    },
+    "redirectUrl": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "mailingListId": {
+      "type": "string"
+    },
+    "formId": {
+      "type": "string"
+    },
+    "UserConsent": {
+      "type": "string"
+    },
+    "ThanksMessage": {
+      "type": "text"
+    },
+    "PrivacyStatement": {
+      "type": "richtext"
+    }
+  }
+}

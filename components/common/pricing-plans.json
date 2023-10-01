@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_pricing_plans",
+  "info": {
+    "name": "PricingPlans",
+    "icon": "birthday-cake"
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "PricingCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.pricing-cards"
+    }
+  }
+}

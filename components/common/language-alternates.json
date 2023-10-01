@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_language_alternates",
+  "info": {
+    "name": "languageAlternates",
+    "icon": "angle-left"
+  },
+  "options": {},
+  "attributes": {
+    "hrefLang": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

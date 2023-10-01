@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_news_news_cards",
+  "info": {
+    "name": "NewsCard",
+    "icon": "basketball-ball",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "NewsTitle": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "string"
+    },
+    "PageUrl": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

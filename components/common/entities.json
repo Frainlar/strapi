@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_entities",
+  "info": {
+    "name": "Entities",
+    "icon": "arrow-alt-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "EntityName": {
+      "type": "string"
+    },
+    "EntityCode": {
+      "type": "string"
+    }
+  }
+}

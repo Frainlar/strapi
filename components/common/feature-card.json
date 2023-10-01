@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_common_feature_cards",
+  "info": {
+    "name": "Feature Card",
+    "icon": "bookmark",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "QuickLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.quick-link-lists"
+    },
+    "CTAText": {
+      "type": "string"
+    },
+    "CTAUrl": {
+      "type": "string"
+    },
+    "topwing": {
+      "type": "text"
+    },
+    "bottomwing": {
+      "type": "text"
+    },
+    "imageurl": {
+      "type": "string"
+    }
+  }
+}

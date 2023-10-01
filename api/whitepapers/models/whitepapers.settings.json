@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "whitepapers",
+  "info": {
+    "name": "Whitepapers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "DownloadWhitepaper": {
+      "type": "string"
+    },
+    "Download": {
+      "type": "string"
+    },
+    "GoBackToResources": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.quick-link-lists"
+    },
+    "PageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "WhitepaperTitle": {
+      "type": "string"
+    },
+    "ResourceUrl": {
+      "type": "string"
+    },
+    "StreamName": {
+      "type": "string"
+    },
+    "CampaignName": {
+      "type": "string"
+    },
+    "FormFields": {
+      "type": "component",
+      "repeatable": false,
+      "component": "resources.e-book-form-fields"
+    }
+  }
+}

@@ -1,0 +1,1966 @@
+{
+  "paths": {
+    "/capabilities": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the capabilities's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve capabilities document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Capabilities"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Capabilities"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new capabilities record",
+        "responses": {
+          "200": {
+            "description": "Retrieve capabilities document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Capabilities"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Capabilities"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCapabilities"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/capabilities/count": {
+      "get": {
+        "deprecated": false,
+        "description": "Retrieve the number of capabilities documents",
+        "responses": {
+          "200": {
+            "description": "Retrieve capabilities document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Capabilities"
+        ],
+        "parameters": []
+      }
+    },
+    "/capabilities/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one capabilities record",
+        "responses": {
+          "200": {
+            "description": "Retrieve capabilities document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Capabilities"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Capabilities"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single capabilities record",
+        "responses": {
+          "200": {
+            "description": "Retrieve capabilities document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Capabilities"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Capabilities"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCapabilities"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single capabilities record",
+        "responses": {
+          "200": {
+            "description": "deletes a single capabilities based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Capabilities"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Capabilities": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "PageSEO": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "PageTitle": {
+                "type": "string"
+              },
+              "PageDescription": {
+                "type": "string"
+              },
+              "CanonicalTag": {
+                "type": "string"
+              },
+              "ThumbnailImageURL": {
+                "type": "string"
+              },
+              "BreadCrumb": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "item": {
+                      "type": "string"
+                    },
+                    "position": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "PageURL": {
+                "type": "string"
+              }
+            }
+          },
+          "ProductsBanner": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "DigitalStreamTitle": {
+                "type": "string"
+              },
+              "BannerHeadline": {
+                "type": "string"
+              },
+              "BannerSubHeadline": {
+                "type": "string"
+              },
+              "ReviewStatement": {
+                "type": "string"
+              },
+              "ReviewImages": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "BannerImage": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "imageURL",
+                  "imageDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "string"
+                  },
+                  "imageDescription": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "ProductsBannerForm": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "EmailPlaceholder": {
+                    "type": "string"
+                  },
+                  "ButtonPlaceholder": {
+                    "type": "string"
+                  },
+                  "FormId": {
+                    "type": "string"
+                  },
+                  "MailingListId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "RatingValue": {
+                "type": "number"
+              },
+              "ReviewCount": {
+                "type": "integer"
+              }
+            }
+          },
+          "ProductsDevAttributes": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Stream": {
+                "type": "string",
+                "enum": [
+                  "maps",
+                  "projects",
+                  "process",
+                  "labs",
+                  "mines"
+                ]
+              }
+            }
+          },
+          "StreamSlug": {
+            "type": "string"
+          },
+          "ValuePropositions": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "ValuePoints": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "BaseImageURL": {
+                "type": "string"
+              },
+              "TopImageURL": {
+                "type": "string"
+              },
+              "BottomImageURL": {
+                "type": "string"
+              }
+            }
+          },
+          "StreamFeatures": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Tag": {
+                  "type": "string"
+                },
+                "Title": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "CTAUrl": {
+                  "type": "string"
+                },
+                "CTAText": {
+                  "type": "string"
+                },
+                "ImageURL": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "Statistics": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "SectionTitle": {
+                "type": "string"
+              },
+              "Heading": {
+                "type": "string"
+              },
+              "SubHeading": {
+                "type": "string"
+              },
+              "StatisticsCard": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "IsIncreasing": {
+                      "type": "boolean"
+                    },
+                    "StatisticsPoint": {
+                      "type": "string"
+                    },
+                    "MetaInformation": {
+                      "type": "string"
+                    },
+                    "Percentage": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "OtherFeatures": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Content": {
+                "type": "string"
+              },
+              "TabPanel": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "SideTitle": {
+                      "type": "string"
+                    },
+                    "SideDescription": {
+                      "type": "string"
+                    },
+                    "MainContent": {
+                      "type": "string"
+                    },
+                    "ImageURL": {
+                      "type": "string"
+                    },
+                    "MainTitle": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "FAQ": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "SectionTitle": {
+                "type": "string"
+              },
+              "FAQ": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Question": {
+                      "type": "string"
+                    },
+                    "Answer": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "TagTitle": {
+                "type": "string"
+              }
+            }
+          },
+          "CTABar": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "SectionHeading": {
+                "type": "string"
+              },
+              "ImageURL": {
+                "type": "string"
+              },
+              "Form": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "EmailPlaceholder": {
+                    "type": "string"
+                  },
+                  "ButtonPlaceholder": {
+                    "type": "string"
+                  },
+                  "FormId": {
+                    "type": "string"
+                  },
+                  "MailingListId": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "CustomerTestimonial": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Testimonial": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "TestimonialStatement": {
+                    "type": "string"
+                  },
+                  "AuthorName": {
+                    "type": "string"
+                  },
+                  "AuthorAvatarURL": {
+                    "type": "string"
+                  },
+                  "AuthorDescription": {
+                    "type": "string"
+                  }
+                }
+              },
+              "Logos": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "LinkText": {
+                      "type": "string"
+                    },
+                    "LinkURL": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "LeftSectionTitle": {
+                "type": "string"
+              },
+              "LeftSectionImage": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "LinkText": {
+                    "type": "string"
+                  },
+                  "LinkURL": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "ResourcesComponent": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "MajorResourceCards": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "CTAUrl": {
+                      "type": "string"
+                    },
+                    "OpenNewTab": {
+                      "type": "boolean"
+                    },
+                    "DigitalStream": {
+                      "type": "string",
+                      "enum": [
+                        "maps",
+                        "projects",
+                        "process",
+                        "labs",
+                        "mines",
+                        "dxaas"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "Articles": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "ResourcesList": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "ImageURL": {
+                      "type": "string"
+                    },
+                    "PageURL": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Tag": {
+                      "type": "string"
+                    },
+                    "Author": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "News": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "ResourcesList": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "ImageURL": {
+                      "type": "string"
+                    },
+                    "PageURL": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Tag": {
+                      "type": "string"
+                    },
+                    "Author": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "string"
+                },
+                "PageSEO": {
+                  "type": "component"
+                },
+                "ProductsBanner": {
+                  "type": "component"
+                },
+                "ProductsDevAttributes": {
+                  "type": "component"
+                },
+                "StreamSlug": {
+                  "type": "string"
+                },
+                "ValuePropositions": {
+                  "type": "component"
+                },
+                "StreamFeatures": {
+                  "type": "component"
+                },
+                "Statistics": {
+                  "type": "component"
+                },
+                "OtherFeatures": {
+                  "type": "component"
+                },
+                "FAQ": {
+                  "type": "component"
+                },
+                "CTABar": {
+                  "type": "component"
+                },
+                "CustomerTestimonial": {
+                  "type": "component"
+                },
+                "ResourcesComponent": {
+                  "type": "component"
+                },
+                "Articles": {
+                  "type": "component"
+                },
+                "News": {
+                  "type": "component"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewCapabilities": {
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "PageSEO": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "PageTitle": {
+                "type": "string"
+              },
+              "PageDescription": {
+                "type": "string"
+              },
+              "CanonicalTag": {
+                "type": "string"
+              },
+              "ThumbnailImageURL": {
+                "type": "string"
+              },
+              "BreadCrumb": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "item": {
+                      "type": "string"
+                    },
+                    "position": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "PageURL": {
+                "type": "string"
+              }
+            }
+          },
+          "ProductsBanner": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "DigitalStreamTitle": {
+                "type": "string"
+              },
+              "BannerHeadline": {
+                "type": "string"
+              },
+              "BannerSubHeadline": {
+                "type": "string"
+              },
+              "ReviewStatement": {
+                "type": "string"
+              },
+              "ReviewImages": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "BannerImage": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "imageURL",
+                  "imageDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "string"
+                  },
+                  "imageDescription": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "ProductsBannerForm": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "EmailPlaceholder": {
+                    "type": "string"
+                  },
+                  "ButtonPlaceholder": {
+                    "type": "string"
+                  },
+                  "FormId": {
+                    "type": "string"
+                  },
+                  "MailingListId": {
+                    "type": "string"
+                  }
+                }
+              },
+              "RatingValue": {
+                "type": "number"
+              },
+              "ReviewCount": {
+                "type": "integer"
+              }
+            }
+          },
+          "ProductsDevAttributes": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Stream": {
+                "type": "string",
+                "enum": [
+                  "maps",
+                  "projects",
+                  "process",
+                  "labs",
+                  "mines"
+                ]
+              }
+            }
+          },
+          "StreamSlug": {
+            "type": "string"
+          },
+          "ValuePropositions": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "ValuePoints": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "BaseImageURL": {
+                "type": "string"
+              },
+              "TopImageURL": {
+                "type": "string"
+              },
+              "BottomImageURL": {
+                "type": "string"
+              }
+            }
+          },
+          "StreamFeatures": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Tag": {
+                  "type": "string"
+                },
+                "Title": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "CTAUrl": {
+                  "type": "string"
+                },
+                "CTAText": {
+                  "type": "string"
+                },
+                "ImageURL": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "Statistics": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "SectionTitle": {
+                "type": "string"
+              },
+              "Heading": {
+                "type": "string"
+              },
+              "SubHeading": {
+                "type": "string"
+              },
+              "StatisticsCard": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "IsIncreasing": {
+                      "type": "boolean"
+                    },
+                    "StatisticsPoint": {
+                      "type": "string"
+                    },
+                    "MetaInformation": {
+                      "type": "string"
+                    },
+                    "Percentage": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "OtherFeatures": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Content": {
+                "type": "string"
+              },
+              "TabPanel": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "SideTitle": {
+                      "type": "string"
+                    },
+                    "SideDescription": {
+                      "type": "string"
+                    },
+                    "MainContent": {
+                      "type": "string"
+                    },
+                    "ImageURL": {
+                      "type": "string"
+                    },
+                    "MainTitle": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "FAQ": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "SectionTitle": {
+                "type": "string"
+              },
+              "FAQ": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Question": {
+                      "type": "string"
+                    },
+                    "Answer": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "TagTitle": {
+                "type": "string"
+              }
+            }
+          },
+          "CTABar": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "SectionHeading": {
+                "type": "string"
+              },
+              "ImageURL": {
+                "type": "string"
+              },
+              "Form": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "EmailPlaceholder": {
+                    "type": "string"
+                  },
+                  "ButtonPlaceholder": {
+                    "type": "string"
+                  },
+                  "FormId": {
+                    "type": "string"
+                  },
+                  "MailingListId": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "CustomerTestimonial": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "Testimonial": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "TestimonialStatement": {
+                    "type": "string"
+                  },
+                  "AuthorName": {
+                    "type": "string"
+                  },
+                  "AuthorAvatarURL": {
+                    "type": "string"
+                  },
+                  "AuthorDescription": {
+                    "type": "string"
+                  }
+                }
+              },
+              "Logos": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "LinkText": {
+                      "type": "string"
+                    },
+                    "LinkURL": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "LeftSectionTitle": {
+                "type": "string"
+              },
+              "LeftSectionImage": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "LinkText": {
+                    "type": "string"
+                  },
+                  "LinkURL": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "ResourcesComponent": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "MajorResourceCards": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "CTAUrl": {
+                      "type": "string"
+                    },
+                    "OpenNewTab": {
+                      "type": "boolean"
+                    },
+                    "DigitalStream": {
+                      "type": "string",
+                      "enum": [
+                        "maps",
+                        "projects",
+                        "process",
+                        "labs",
+                        "mines",
+                        "dxaas"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "Articles": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "ResourcesList": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "ImageURL": {
+                      "type": "string"
+                    },
+                    "PageURL": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Tag": {
+                      "type": "string"
+                    },
+                    "Author": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "News": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "ResourcesList": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "ImageURL": {
+                      "type": "string"
+                    },
+                    "PageURL": {
+                      "type": "string"
+                    },
+                    "Title": {
+                      "type": "string"
+                    },
+                    "Description": {
+                      "type": "string"
+                    },
+                    "Tag": {
+                      "type": "string"
+                    },
+                    "Author": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Capabilities"
+    }
+  ]
+}

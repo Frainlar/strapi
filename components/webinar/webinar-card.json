@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_webinar_webinar_cards",
+  "info": {
+    "name": "WebinarCard",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "WebinarTitle": {
+      "type": "string"
+    },
+    "ImageURL": {
+      "type": "string"
+    },
+    "PageURL": {
+      "type": "string"
+    },
+    "RelatedStream": {
+      "type": "enumeration",
+      "enum": [
+        "maps",
+        "projects",
+        "process",
+        "labs",
+        "mines",
+        "dxaas"
+      ]
+    },
+    "tagClass": {
+      "type": "string"
+    },
+    "CTAText": {
+      "type": "string"
+    },
+    "RelatedRole": {
+      "type": "string"
+    },
+    "RelatedTopic": {
+      "type": "string"
+    }
+  }
+}

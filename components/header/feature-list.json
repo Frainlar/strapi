@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_header_feature_lists",
+  "info": {
+    "name": "featureList",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "ImageURL": {
+      "type": "string"
+    },
+    "LandingPageURL": {
+      "type": "string"
+    }
+  }
+}

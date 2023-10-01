@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_common_cta_cards",
+  "info": {
+    "name": "CTACard",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "CTATitle": {
+      "type": "richtext"
+    },
+    "CTADescription": {
+      "type": "richtext"
+    },
+    "PrimaryCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "SecondaryCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    }
+  }
+}

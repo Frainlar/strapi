@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_pricing_pricing_cards",
+  "info": {
+    "name": "PricingCard",
+    "icon": "arrow-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list"
+    },
+    "StreamLogoURL": {
+      "type": "string"
+    },
+    "Users": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list"
+    },
+    "Price": {
+      "type": "string"
+    },
+    "Bots": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list"
+    },
+    "StreamTitle": {
+      "type": "string"
+    },
+    "StreamDescription": {
+      "type": "string"
+    },
+    "KeyFeatures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list"
+    },
+    "ExtraText": {
+      "type": "string"
+    },
+    "AdditionalInfo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list"
+    },
+    "ContinuousValue": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list"
+    }
+  }
+}

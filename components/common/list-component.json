@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_list_components",
+  "info": {
+    "name": "ListComponent",
+    "icon": "bowling-ball"
+  },
+  "options": {},
+  "attributes": {
+    "ListItem": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_video_video_landing_pages",
+  "info": {
+    "name": "VideoLandingPage",
+    "icon": "bath",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "PageHeader": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "VideoEmbedUrl": {
+      "type": "string"
+    },
+    "DigitalStream": {
+      "type": "enumeration",
+      "enum": [
+        "maps",
+        "projects",
+        "process",
+        "labs",
+        "mines"
+      ]
+    },
+    "RelatedResources": {
+      "type": "string"
+    }
+  }
+}

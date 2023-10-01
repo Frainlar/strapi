@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_quick_link_lists",
+  "info": {
+    "name": "Quick Link Lists",
+    "icon": "braille"
+  },
+  "options": {},
+  "attributes": {
+    "LinkText": {
+      "type": "string"
+    },
+    "LinkURL": {
+      "type": "string"
+    }
+  }
+}

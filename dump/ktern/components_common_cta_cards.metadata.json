@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"0751f75aac5d4dd2ab1b056ae021f3fa","collectionName":"components_common_cta_cards","type":"collection"}

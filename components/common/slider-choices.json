@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_common_slider_choices",
+  "info": {
+    "name": "SliderChoices",
+    "icon": "bomb"
+  },
+  "options": {},
+  "attributes": {
+    "StartLimit": {
+      "type": "integer"
+    },
+    "EndLimit": {
+      "type": "integer"
+    },
+    "Operation": {
+      "type": "enumeration",
+      "enum": [
+        "Add",
+        "Subtract",
+        "Multiply",
+        "Divide"
+      ]
+    },
+    "Factor": {
+      "type": "decimal"
+    }
+  }
+}

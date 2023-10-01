@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_common_pricing_components",
+  "info": {
+    "name": "PricingComponent",
+    "icon": "bong"
+  },
+  "options": {},
+  "attributes": {
+    "Amount": {
+      "type": "string"
+    },
+    "CardTitleLargeText": {
+      "type": "string"
+    },
+    "CardTitleSmallText": {
+      "type": "string"
+    },
+    "BodyTitle": {
+      "type": "string"
+    },
+    "BodyDescription": {
+      "type": "string"
+    },
+    "PricingListComponent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list-component"
+    },
+    "CTAButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    }
+  }
+}

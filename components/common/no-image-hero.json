@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_no_image_heroes",
+  "info": {
+    "name": "NoImageHero",
+    "icon": "broadcast-tower",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Heading": {
+      "type": "text"
+    },
+    "SubHeading": {
+      "type": "string"
+    },
+    "CTAButtons": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    }
+  }
+}

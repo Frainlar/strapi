@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tools_reports",
+  "info": {
+    "name": "tools report",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Userdata": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.userdata"
+    },
+    "email": {
+      "type": "string"
+    },
+    "tool": {
+      "type": "string"
+    }
+  }
+}

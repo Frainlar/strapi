@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"3f541d0a25cb4d99aa06ca0d0a7efca4","collectionName":"components_common_secondary_cards","type":"collection"}

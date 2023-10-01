@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_video_banner_icon_sections",
+  "info": {
+    "name": "bannerIconSection",
+    "icon": "barcode"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    }
+  }
+}

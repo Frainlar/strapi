@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/news-center-pages",
+      "handler": "news-center-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/news-center-pages/count",
+      "handler": "news-center-page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/news-center-pages/:id",
+      "handler": "news-center-page.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/news-center-pages",
+      "handler": "news-center-page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/news-center-pages/:id",
+      "handler": "news-center-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/news-center-pages/:id",
+      "handler": "news-center-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

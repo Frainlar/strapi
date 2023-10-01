@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_common_testimonials",
+  "info": {
+    "name": "Testimonial",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "TestimonialStatement": {
+      "type": "richtext"
+    },
+    "AuthorName": {
+      "type": "string"
+    },
+    "AuthorAvatarURL": {
+      "type": "string"
+    },
+    "AuthorDescription": {
+      "type": "string"
+    }
+  }
+}

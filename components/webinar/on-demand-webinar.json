@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_webinar_on_demand_webinars",
+  "info": {
+    "name": "OnDemandWebinar",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "PageHeader": {
+      "type": "string"
+    },
+    "PageSubHeader": {
+      "type": "string"
+    },
+    "CTAButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "Video": {
+      "type": "string"
+    },
+    "VideoURL": {
+      "type": "string"
+    },
+    "Slide": {
+      "type": "string"
+    },
+    "SlideURL": {
+      "type": "string"
+    }
+  }
+}

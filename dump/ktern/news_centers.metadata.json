@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"4998ad7db3924d729f3c4e914687467c","collectionName":"news_centers","type":"collection"}

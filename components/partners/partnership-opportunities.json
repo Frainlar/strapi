@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_partners_partnership_opportunities",
+  "info": {
+    "name": "PartnershipOpportunities",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "string"
+    },
+    "SectionDescription": {
+      "type": "richtext"
+    },
+    "PartnerCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partners.partner-card"
+    }
+  }
+}

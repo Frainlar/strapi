@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_product_useds",
+  "info": {
+    "name": "ProductUsed",
+    "icon": "list-ul"
+  },
+  "options": {},
+  "attributes": {
+    "height": {
+      "type": "integer"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "redirectURL": {
+      "type": "string"
+    },
+    "ListImageURL": {
+      "type": "string"
+    },
+    "ListText": {
+      "type": "string"
+    }
+  }
+}

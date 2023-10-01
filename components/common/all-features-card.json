@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_common_all_features_cards",
+  "info": {
+    "name": "All Features Card",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "IconURL": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "CTAText": {
+      "type": "string"
+    },
+    "CTAUrl": {
+      "type": "string"
+    },
+    "QuickLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.quick-link-lists"
+    }
+  }
+}

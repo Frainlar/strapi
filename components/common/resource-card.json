@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_common_resource_cards",
+  "info": {
+    "name": "Resource Card",
+    "icon": "arrow-alt-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ResourceTitle": {
+      "type": "string"
+    },
+    "ResourceDescription": {
+      "type": "richtext"
+    },
+    "ResourceType": {
+      "type": "enumeration",
+      "enum": [
+        "ebook",
+        "whitepaper",
+        "customersuccessstory"
+      ]
+    },
+    "RelatedStream": {
+      "type": "enumeration",
+      "enum": [
+        "maps",
+        "projects",
+        "process",
+        "labs",
+        "mines"
+      ]
+    },
+    "RelatedRole": {
+      "type": "enumeration",
+      "enum": [
+        "projectmanager",
+        "testmanager",
+        "tester",
+        "cxo",
+        "consultant"
+      ]
+    },
+    "ResourceURL": {
+      "type": "string"
+    },
+    "ResourceImage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image"
+    }
+  }
+}

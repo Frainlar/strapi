@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_contact_contact_addresses",
+  "info": {
+    "name": "ContactAddress",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "ContactText": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "richtext"
+    }
+  }
+}

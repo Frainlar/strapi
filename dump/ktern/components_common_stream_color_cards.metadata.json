@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"cce214fa98fd4b0ca207da359feee93f","collectionName":"components_common_stream_color_cards","type":"collection"}

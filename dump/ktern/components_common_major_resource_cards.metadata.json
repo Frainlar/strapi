@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"56ad689409634670a7d3c4c7b29028bd","collectionName":"components_common_major_resource_cards","type":"collection"}

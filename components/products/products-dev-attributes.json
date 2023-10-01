@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_products_products_dev_attributes",
+  "info": {
+    "name": "ProductsDevAttributes",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "Stream": {
+      "type": "enumeration",
+      "enum": [
+        "maps",
+        "projects",
+        "process",
+        "labs",
+        "mines"
+      ]
+    }
+  }
+}

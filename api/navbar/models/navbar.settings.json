@@ -1,0 +1,104 @@
+{
+  "kind": "singleType",
+  "collectionName": "navbars",
+  "info": {
+    "name": "Navbar",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DigitalMaps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.feature"
+    },
+    "DigitalProjects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.feature"
+    },
+    "DigitalProcess": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.feature"
+    },
+    "DigitalLabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.feature"
+    },
+    "DigitalMines": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.feature"
+    },
+    "Streams": {
+      "type": "string"
+    },
+    "SeePricing": {
+      "type": "string"
+    },
+    "Products": {
+      "type": "string"
+    },
+    "Resources": {
+      "type": "string"
+    },
+    "Resource": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.nav-bar-section"
+    },
+    "Partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.nav-bar-section"
+    },
+    "Support": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "Company": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "CTA1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "CTA2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "Partner": {
+      "type": "string"
+    },
+    "TopBar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "KTernLogoURL": {
+      "type": "string"
+    },
+    "AllFeatures": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "Pricing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    }
+  }
+}

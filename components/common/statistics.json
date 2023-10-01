@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_common_statistics",
+  "info": {
+    "name": "Statistics",
+    "icon": "cloud-upload-alt"
+  },
+  "options": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "string"
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "SubHeading": {
+      "type": "string"
+    },
+    "StatisticsCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.statistics-card"
+    }
+  }
+}

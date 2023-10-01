@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_common_image_buttons",
+  "info": {
+    "name": "ImageButton",
+    "icon": "arrow-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ImageUrl": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    }
+  }
+}

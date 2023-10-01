@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/digital-streams",
+      "handler": "digital-stream.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/digital-streams/count",
+      "handler": "digital-stream.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/digital-streams/:id",
+      "handler": "digital-stream.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/digital-streams",
+      "handler": "digital-stream.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/digital-streams/:id",
+      "handler": "digital-stream.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/digital-streams/:id",
+      "handler": "digital-stream.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

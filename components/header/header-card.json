@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_header_header_cards",
+  "info": {
+    "name": "HeaderCard",
+    "icon": "arrow-down"
+  },
+  "options": {},
+  "attributes": {
+    "slug": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "featureList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "header.feature-list"
+    }
+  }
+}

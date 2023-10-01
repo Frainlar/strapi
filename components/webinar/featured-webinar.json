@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_webinar_featured_webinars",
+  "info": {
+    "name": "FeaturedWebinar",
+    "icon": "baby",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "enumeration",
+      "enum": [
+        "maps",
+        "projects",
+        "process",
+        "labs",
+        "mines"
+      ]
+    },
+    "imageURL": {
+      "type": "string"
+    },
+    "WebinarTitle": {
+      "type": "string"
+    },
+    "WebinarDescription": {
+      "type": "richtext"
+    },
+    "Date": {
+      "type": "date"
+    },
+    "Time": {
+      "type": "time"
+    },
+    "TimeZone": {
+      "type": "string"
+    },
+    "Speaker": {
+      "type": "component",
+      "repeatable": true,
+      "component": "webinar.speaker"
+    },
+    "tagClass": {
+      "type": "string"
+    },
+    "WebinarURL": {
+      "type": "string"
+    },
+    "CTAText": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "collectionName": "components_common_resources",
+  "info": {
+    "name": "Resources",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ResourceTitle": {
+      "type": "string"
+    },
+    "DigitalStream": {
+      "type": "enumeration",
+      "enum": [
+        "maps",
+        "projects",
+        "process",
+        "labs",
+        "mines"
+      ]
+    },
+    "ResourceType": {
+      "type": "enumeration",
+      "enum": [
+        "EBook",
+        "Whitepaper",
+        "CustomerSuccessStory",
+        "Video",
+        "Tool"
+      ]
+    },
+    "RelatedRole": {
+      "type": "enumeration",
+      "enum": [
+        "ProjectManager",
+        "TestManager",
+        "CXO",
+        "Tester",
+        "TechnicalConsultant",
+        "FunctionalConsultant"
+      ]
+    },
+    "ResourceURL": {
+      "type": "string"
+    },
+    "CTAText": {
+      "type": "string"
+    },
+    "ImageURL": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "ResourceTypeName": {
+      "type": "string"
+    },
+    "RelatedTopic": {
+      "type": "string"
+    }
+  }
+}

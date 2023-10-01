@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_contact_contact_form_fields",
+  "info": {
+    "name": "ContactFormFields",
+    "icon": "arrow-alt-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string"
+    },
+    "LastName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Message": {
+      "type": "string"
+    },
+    "PrivacyStatement": {
+      "type": "richtext"
+    },
+    "FormTitle": {
+      "type": "string"
+    },
+    "ThanksMsg": {
+      "type": "string"
+    },
+    "redirectURL": {
+      "type": "string"
+    }
+  }
+}

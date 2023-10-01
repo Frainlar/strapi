@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "consulting_partners",
+  "info": {
+    "name": "Consulting Partner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "WhyConsultingPartner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.card"
+    },
+    "TrustedByLogos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image"
+    },
+    "FAQSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.faq"
+    },
+    "PartnershipSteps": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partners.partnership-steps"
+    },
+    "PageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "CTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.cta-card"
+    },
+    "WhySectionTitle": {
+      "type": "string"
+    },
+    "PartnerLogoTitle": {
+      "type": "string"
+    },
+    "FAQTitle": {
+      "type": "string"
+    },
+    "PartnershipBenefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "partners.partnership-benefits"
+    },
+    "PartnerBenefitTitle": {
+      "type": "string"
+    }
+  }
+}

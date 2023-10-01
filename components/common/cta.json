@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_common_ctas",
+  "info": {
+    "name": "CTA",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "CTATitle": {
+      "type": "richtext",
+      "required": true
+    },
+    "CTADescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "CTAButtonText": {
+      "type": "string"
+    },
+    "CTAButtonLink": {
+      "type": "string"
+    },
+    "CTABackgroundImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    }
+  }
+}

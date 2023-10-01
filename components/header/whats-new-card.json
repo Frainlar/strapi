@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_header_whats_new_cards",
+  "info": {
+    "name": "WhatsNewCard",
+    "icon": "border-style",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "redirectURL": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    }
+  }
+}

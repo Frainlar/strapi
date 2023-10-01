@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_contact_contact_mails",
+  "info": {
+    "name": "ContactMail",
+    "icon": "bible"
+  },
+  "options": {},
+  "attributes": {
+    "EmailText": {
+      "type": "text"
+    },
+    "EmailId": {
+      "type": "string"
+    }
+  }
+}

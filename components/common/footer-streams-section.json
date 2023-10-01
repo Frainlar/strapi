@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_footer_streams_sections",
+  "info": {
+    "name": "FooterStreamsSection",
+    "icon": "battery-half",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "DXStatement": {
+      "type": "string"
+    },
+    "OneLineStatement": {
+      "type": "string"
+    },
+    "DigitalStreamsLogo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    },
+    "PageURL": {
+      "type": "string"
+    }
+  }
+}

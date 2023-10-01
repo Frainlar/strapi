@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_common_cards",
+  "info": {
+    "name": "Card",
+    "icon": "brain",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    },
+    "CardTitle": {
+      "type": "string",
+      "required": true
+    },
+    "CardDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "CTAUrl": {
+      "type": "string"
+    },
+    "CTAText": {
+      "type": "string"
+    },
+    "Tag": {
+      "type": "string"
+    },
+    "OpenNewTab": {
+      "type": "boolean"
+    }
+  }
+}

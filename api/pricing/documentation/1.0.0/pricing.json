@@ -1,0 +1,1192 @@
+{
+  "paths": {
+    "/pricing": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the pricing's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve pricing document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Pricing"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Pricing"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single pricing record",
+        "responses": {
+          "200": {
+            "description": "Retrieve pricing document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Pricing"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Pricing"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewPricing"
+              }
+            }
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single pricing record",
+        "responses": {
+          "200": {
+            "description": "deletes a single pricing based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Pricing"
+        ],
+        "parameters": []
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Pricing": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "PageSEO": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "PageTitle": {
+                "type": "string"
+              },
+              "PageDescription": {
+                "type": "string"
+              },
+              "CanonicalTag": {
+                "type": "string"
+              },
+              "ThumbnailImageURL": {
+                "type": "string"
+              },
+              "BreadCrumb": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "item": {
+                      "type": "string"
+                    },
+                    "position": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "PageURL": {
+                "type": "string"
+              }
+            }
+          },
+          "PageHeader": {
+            "type": "object",
+            "required": [
+              "id",
+              "header",
+              "subHeading"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "header": {
+                "type": "string"
+              },
+              "subHeading": {
+                "type": "string"
+              },
+              "primaryCTA": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "buttonTitle",
+                  "linkURL"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "buttonTitle": {
+                    "type": "string"
+                  },
+                  "linkURL": {
+                    "type": "string"
+                  },
+                  "openNewTab": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "secondaryCTA": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "buttonTitle",
+                  "linkURL"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "buttonTitle": {
+                    "type": "string"
+                  },
+                  "linkURL": {
+                    "type": "string"
+                  },
+                  "openNewTab": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "BelowCTAText": {
+                "type": "string"
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "PrimaryColor": {
+                "type": "string"
+              },
+              "SecondaryColor": {
+                "type": "string"
+              },
+              "ImageURL": {
+                "type": "string"
+              },
+              "header2": {
+                "type": "string"
+              },
+              "ImageWidth": {
+                "type": "string"
+              },
+              "ImageHeight": {
+                "type": "string"
+              },
+              "alternateImageUrl": {
+                "type": "string"
+              },
+              "BannerHeadline": {
+                "type": "string"
+              },
+              "BannerSubHeadline": {
+                "type": "string"
+              },
+              "ReviewStatement": {
+                "type": "string"
+              },
+              "ReviewImages": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "BannerImage": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "imageURL",
+                  "imageDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "string"
+                  },
+                  "imageDescription": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "PricingCard": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Values": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "StreamLogoURL": {
+                  "type": "string"
+                },
+                "Users": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "Price": {
+                  "type": "string"
+                },
+                "Bots": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "StreamTitle": {
+                  "type": "string"
+                },
+                "StreamDescription": {
+                  "type": "string"
+                },
+                "KeyFeatures": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "ExtraText": {
+                  "type": "string"
+                },
+                "AdditionalInfo": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "ContinuousValue": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "slug": {
+            "type": "string"
+          },
+          "LogoSectionTitle": {
+            "type": "string"
+          },
+          "LogoSectionContent": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "imageURL",
+                "imageDescription"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "imageURL": {
+                  "type": "string"
+                },
+                "imageDescription": {
+                  "type": "string"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "width": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "KeyFeatures": {
+            "type": "string"
+          },
+          "Values": {
+            "type": "string"
+          },
+          "Bots": {
+            "type": "string"
+          },
+          "Users": {
+            "type": "string"
+          },
+          "FAQSection": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Question": {
+                  "type": "string"
+                },
+                "Answer": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "FAQTitle": {
+            "type": "string"
+          },
+          "PricingTerms": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewPricing": {
+        "properties": {
+          "PageSEO": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "PageTitle": {
+                "type": "string"
+              },
+              "PageDescription": {
+                "type": "string"
+              },
+              "CanonicalTag": {
+                "type": "string"
+              },
+              "ThumbnailImageURL": {
+                "type": "string"
+              },
+              "BreadCrumb": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "item": {
+                      "type": "string"
+                    },
+                    "position": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "PageURL": {
+                "type": "string"
+              }
+            }
+          },
+          "PageHeader": {
+            "type": "object",
+            "required": [
+              "id",
+              "header",
+              "subHeading"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "header": {
+                "type": "string"
+              },
+              "subHeading": {
+                "type": "string"
+              },
+              "primaryCTA": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "buttonTitle",
+                  "linkURL"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "buttonTitle": {
+                    "type": "string"
+                  },
+                  "linkURL": {
+                    "type": "string"
+                  },
+                  "openNewTab": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "secondaryCTA": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "buttonTitle",
+                  "linkURL"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "buttonTitle": {
+                    "type": "string"
+                  },
+                  "linkURL": {
+                    "type": "string"
+                  },
+                  "openNewTab": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "BelowCTAText": {
+                "type": "string"
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "PrimaryColor": {
+                "type": "string"
+              },
+              "SecondaryColor": {
+                "type": "string"
+              },
+              "ImageURL": {
+                "type": "string"
+              },
+              "header2": {
+                "type": "string"
+              },
+              "ImageWidth": {
+                "type": "string"
+              },
+              "ImageHeight": {
+                "type": "string"
+              },
+              "alternateImageUrl": {
+                "type": "string"
+              },
+              "BannerHeadline": {
+                "type": "string"
+              },
+              "BannerSubHeadline": {
+                "type": "string"
+              },
+              "ReviewStatement": {
+                "type": "string"
+              },
+              "ReviewImages": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "BannerImage": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "imageURL",
+                  "imageDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "string"
+                  },
+                  "imageDescription": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "PricingCard": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Values": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "StreamLogoURL": {
+                  "type": "string"
+                },
+                "Users": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "Price": {
+                  "type": "string"
+                },
+                "Bots": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "StreamTitle": {
+                  "type": "string"
+                },
+                "StreamDescription": {
+                  "type": "string"
+                },
+                "KeyFeatures": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "ExtraText": {
+                  "type": "string"
+                },
+                "AdditionalInfo": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "ContinuousValue": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "slug": {
+            "type": "string"
+          },
+          "LogoSectionTitle": {
+            "type": "string"
+          },
+          "LogoSectionContent": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "imageURL",
+                "imageDescription"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "imageURL": {
+                  "type": "string"
+                },
+                "imageDescription": {
+                  "type": "string"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "width": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "KeyFeatures": {
+            "type": "string"
+          },
+          "Values": {
+            "type": "string"
+          },
+          "Bots": {
+            "type": "string"
+          },
+          "Users": {
+            "type": "string"
+          },
+          "FAQSection": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Question": {
+                  "type": "string"
+                },
+                "Answer": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "FAQTitle": {
+            "type": "string"
+          },
+          "PricingTerms": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Pricing"
+    }
+  ]
+}

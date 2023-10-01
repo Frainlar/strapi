@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_common_testimonial_singles",
+  "info": {
+    "name": "TestimonialSingle",
+    "icon": "bone",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Testimonial": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.testimonial"
+    },
+    "Logos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.quick-link-lists"
+    },
+    "LeftSectionTitle": {
+      "type": "string"
+    },
+    "LeftSectionImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.quick-link-lists"
+    }
+  }
+}

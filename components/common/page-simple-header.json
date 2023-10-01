@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_common_page_simple_headers",
+  "info": {
+    "name": "PageSimpleHeader",
+    "icon": "box",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Header": {
+      "type": "string"
+    },
+    "SubHeading": {
+      "type": "string"
+    },
+    "CTAButtons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.external-button"
+    },
+    "BannerImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    },
+    "HighlightTextHeader": {
+      "type": "string"
+    }
+  }
+}

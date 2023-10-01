@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/value-assessment-roi",
+      "handler": "value-assessment-roi.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/value-assessment-roi",
+      "handler": "value-assessment-roi.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/value-assessment-roi",
+      "handler": "value-assessment-roi.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

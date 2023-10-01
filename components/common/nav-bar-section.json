@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_common_nav_bar_sections",
+  "info": {
+    "name": "NavBarSection",
+    "icon": "arrows-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "NavBarCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.nav-bar-card"
+    },
+    "PageUrl": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_common_other_seos",
+  "info": {
+    "name": "OtherSEO",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "TwitterHandle": {
+      "type": "string"
+    },
+    "FacebookHandle": {
+      "type": "string"
+    },
+    "FacebookSite": {
+      "type": "string"
+    },
+    "FacebookAppId": {
+      "type": "string"
+    },
+    "languageAlternates": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.language-alternates"
+    },
+    "Favicon": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    }
+  }
+}

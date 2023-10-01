@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_trust_center_trust_center_cards",
+  "info": {
+    "name": "TrustCenterCard",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "IconURL": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Points": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list"
+    }
+  }
+}

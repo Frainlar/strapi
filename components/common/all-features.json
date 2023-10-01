@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_all_features",
+  "info": {
+    "name": "All Features",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "AllFeaturesCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.all-features-card"
+    }
+  }
+}

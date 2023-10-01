@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_common_featured_resources",
+  "info": {
+    "name": "FeaturedResources",
+    "icon": "business-time",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "SectionTitle": {
+      "type": "string"
+    },
+    "Resource": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.resource"
+    }
+  }
+}

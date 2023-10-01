@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_common_visions",
+  "info": {
+    "name": "vision",
+    "icon": "bullseye",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Statement": {
+      "type": "string"
+    },
+    "ctatext": {
+      "type": "string"
+    },
+    "ctaurl": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    }
+  }
+}

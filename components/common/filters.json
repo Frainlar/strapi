@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_common_filters",
+  "info": {
+    "name": "Filters",
+    "icon": "ban",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Value": {
+      "type": "string"
+    }
+  }
+}

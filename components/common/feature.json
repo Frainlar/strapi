@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_common_features",
+  "info": {
+    "name": "Feature",
+    "icon": "air-freshener",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "CTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "cssStreamTag": {
+      "type": "string"
+    },
+    "StreamsLogoUrl": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    }
+  }
+}

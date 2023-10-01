@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_partners_pricing_terms",
+  "info": {
+    "name": "PricingTerms",
+    "icon": "camera"
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "ImageURL": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Terms": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.list-component"
+    }
+  }
+}

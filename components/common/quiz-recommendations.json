@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_quiz_recommendations",
+  "info": {
+    "name": "QuizRecommendations",
+    "icon": "bezier-curve"
+  },
+  "options": {},
+  "attributes": {
+    "LevelNumber": {
+      "type": "integer"
+    },
+    "LevelName": {
+      "type": "string"
+    },
+    "ScoreFrom": {
+      "type": "integer"
+    },
+    "ScoreTill": {
+      "type": "integer"
+    },
+    "Recommendations": {
+      "type": "richtext"
+    }
+  }
+}

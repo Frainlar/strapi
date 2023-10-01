@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_common_header_cards",
+  "info": {
+    "name": "HeaderCard",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "SecondaryCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.secondary-card"
+    }
+  }
+}

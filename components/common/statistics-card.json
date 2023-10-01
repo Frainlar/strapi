@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_common_statistics_cards",
+  "info": {
+    "name": "StatisticsCard",
+    "icon": "blog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "IsIncreasing": {
+      "type": "boolean"
+    },
+    "StatisticsPoint": {
+      "type": "string"
+    },
+    "MetaInformation": {
+      "type": "string"
+    },
+    "Percentage": {
+      "type": "string"
+    }
+  }
+}

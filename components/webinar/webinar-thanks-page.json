@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_webinar_webinar_thanks_pages",
+  "info": {
+    "name": "Webinar Thanks Page",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "PageHeader": {
+      "type": "string"
+    },
+    "PageSubHeader": {
+      "type": "string"
+    },
+    "CTAButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.external-button"
+    }
+  }
+}

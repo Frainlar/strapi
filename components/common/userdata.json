@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_userdata",
+  "info": {
+    "name": "Userdata",
+    "icon": "ellipsis-v"
+  },
+  "options": {},
+  "attributes": {
+    "Question": {
+      "type": "text"
+    },
+    "Answer": {
+      "type": "text"
+    }
+  }
+}

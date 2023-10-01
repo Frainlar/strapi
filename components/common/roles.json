@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_common_roles",
+  "info": {
+    "name": "Roles",
+    "icon": "angle-double-right"
+  },
+  "options": {},
+  "attributes": {
+    "RoleTitle": {
+      "type": "string"
+    },
+    "RoleCode": {
+      "type": "string"
+    }
+  }
+}

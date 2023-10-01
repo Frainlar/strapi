@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_pricing_cards",
+  "info": {
+    "name": "PricingCards",
+    "icon": "calendar-day"
+  },
+  "options": {},
+  "attributes": {
+    "Amount": {
+      "type": "string"
+    },
+    "PriceLargeText": {
+      "type": "string"
+    },
+    "PriceSmallText": {
+      "type": "string"
+    },
+    "BodyTitle": {
+      "type": "string"
+    },
+    "BodyDescription": {
+      "type": "string"
+    }
+  }
+}

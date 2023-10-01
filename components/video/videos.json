@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_video_videos",
+  "info": {
+    "name": "videos",
+    "icon": "boxes"
+  },
+  "options": {},
+  "attributes": {
+    "videoUrl": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "playButton": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subTitle": {
+      "type": "string"
+    },
+    "videoStream": {
+      "type": "string"
+    },
+    "videoDuration": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "integer"
+    }
+  }
+}

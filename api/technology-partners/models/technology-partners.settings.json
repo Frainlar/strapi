@@ -1,0 +1,60 @@
+{
+  "kind": "singleType",
+  "collectionName": "technology_partners",
+  "info": {
+    "name": "Technology Partners",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PageHeader": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "WhyTechnologyPartner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.card"
+    },
+    "TrustedByLogos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image"
+    },
+    "FAQSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.faq"
+    },
+    "PartnershipSteps": {
+      "type": "component",
+      "repeatable": false,
+      "component": "partners.partnership-steps"
+    },
+    "PageSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.page-seo"
+    },
+    "CTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.cta-card"
+    },
+    "WhySectionTitle": {
+      "type": "string"
+    },
+    "PartnersLogoTitle": {
+      "type": "string"
+    },
+    "FAQTitle": {
+      "type": "string"
+    }
+  }
+}

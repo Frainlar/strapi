@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/technology-partners",
+      "handler": "technology-partners.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/technology-partners",
+      "handler": "technology-partners.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/technology-partners",
+      "handler": "technology-partners.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

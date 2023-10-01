@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_common_value_propositions",
+  "info": {
+    "name": "ValuePropositions",
+    "icon": "bus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "ValuePoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.value-points"
+    },
+    "Tag": {
+      "type": "string"
+    },
+    "BaseImageURL": {
+      "type": "string"
+    },
+    "TopImageURL": {
+      "type": "string"
+    },
+    "BottomImageURL": {
+      "type": "string"
+    }
+  }
+}

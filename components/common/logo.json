@@ -1,0 +1,24 @@
+{
+  "collectionName": "logos",
+  "info": {
+    "name": "logo",
+    "icon": "award",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logoUrl": {
+      "type": "string",
+      "required": true
+    },
+    "altText": {
+      "type": "string"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "height": {
+      "type": "integer"
+    }
+  }
+}

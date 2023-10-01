@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_common_certificate_candidates",
+  "info": {
+    "name": "CertificateCandidates",
+    "icon": "candy-cane"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Role": {
+      "type": "string"
+    },
+    "CertificateImageURL": {
+      "type": "string"
+    }
+  }
+}

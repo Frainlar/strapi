@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "videos_libraries",
+  "info": {
+    "name": "videos-library",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.landing-page-header"
+    },
+    "bannerLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.logo"
+    },
+    "filterSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "video.banner-icon-section"
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "video.tabs"
+    },
+    "videosList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "video.videos-list"
+    },
+    "selectedTab": {
+      "type": "string"
+    }
+  }
+}

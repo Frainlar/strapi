@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_common_acolade_banners",
+  "info": {
+    "name": "AcoladeBanner",
+    "icon": "bell-slash"
+  },
+  "options": {},
+  "attributes": {
+    "Tag": {
+      "type": "string"
+    },
+    "SectionTitle": {
+      "type": "string"
+    },
+    "LeftImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.quick-link-lists"
+    },
+    "RightImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.quick-link-lists"
+    }
+  }
+}

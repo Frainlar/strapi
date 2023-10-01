@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_video_sub_tabs",
+  "info": {
+    "name": "subTabs",
+    "icon": "clipboard-list"
+  },
+  "options": {},
+  "attributes": {
+    "tabName": {
+      "type": "string"
+    },
+    "tabId": {
+      "type": "string"
+    }
+  }
+}

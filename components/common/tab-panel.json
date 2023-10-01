@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_common_tab_panels",
+  "info": {
+    "name": "TabPanel",
+    "icon": "car",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SideTitle": {
+      "type": "string"
+    },
+    "SideDescription": {
+      "type": "text"
+    },
+    "MainContent": {
+      "type": "richtext"
+    },
+    "ImageURL": {
+      "type": "string"
+    },
+    "MainTitle": {
+      "type": "string"
+    }
+  }
+}

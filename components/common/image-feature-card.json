@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_common_image_feature_cards",
+  "info": {
+    "name": "ImageFeatureCard",
+    "icon": "car-battery",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ImageURL": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "LandingPageURL": {
+      "type": "string"
+    },
+    "OpenNewTab": {
+      "type": "boolean"
+    }
+  }
+}

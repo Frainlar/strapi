@@ -1,0 +1,1866 @@
+{
+  "paths": {
+    "/index": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the index's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve index document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Index"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Index"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single index record",
+        "responses": {
+          "200": {
+            "description": "Retrieve index document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Index"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Index"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewIndex"
+              }
+            }
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single index record",
+        "responses": {
+          "200": {
+            "description": "deletes a single index based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Index"
+        ],
+        "parameters": []
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Index": {
+        "required": [
+          "id",
+          "pageSEO"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "heroNote": {
+            "type": "string",
+            "maxLength": 25
+          },
+          "heroImage": {
+            "type": "object",
+            "required": [
+              "id",
+              "imageURL",
+              "imageDescription"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "imageURL": {
+                "type": "string"
+              },
+              "imageDescription": {
+                "type": "string"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              }
+            }
+          },
+          "pageSEO": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "PageTitle": {
+                "type": "string"
+              },
+              "PageDescription": {
+                "type": "string"
+              },
+              "CanonicalTag": {
+                "type": "string"
+              },
+              "ThumbnailImageURL": {
+                "type": "string"
+              },
+              "BreadCrumb": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "item": {
+                      "type": "string"
+                    },
+                    "position": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "PageURL": {
+                "type": "string"
+              }
+            }
+          },
+          "pageHeaderDetails": {
+            "type": "object",
+            "required": [
+              "id",
+              "header",
+              "subHeading"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "header": {
+                "type": "string"
+              },
+              "subHeading": {
+                "type": "string"
+              },
+              "primaryCTA": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "buttonTitle",
+                  "linkURL"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "buttonTitle": {
+                    "type": "string"
+                  },
+                  "linkURL": {
+                    "type": "string"
+                  },
+                  "openNewTab": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "secondaryCTA": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "buttonTitle",
+                  "linkURL"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "buttonTitle": {
+                    "type": "string"
+                  },
+                  "linkURL": {
+                    "type": "string"
+                  },
+                  "openNewTab": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "BelowCTAText": {
+                "type": "string"
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "PrimaryColor": {
+                "type": "string"
+              },
+              "SecondaryColor": {
+                "type": "string"
+              },
+              "ImageURL": {
+                "type": "string"
+              },
+              "header2": {
+                "type": "string"
+              },
+              "ImageWidth": {
+                "type": "string"
+              },
+              "ImageHeight": {
+                "type": "string"
+              },
+              "alternateImageUrl": {
+                "type": "string"
+              },
+              "BannerHeadline": {
+                "type": "string"
+              },
+              "BannerSubHeadline": {
+                "type": "string"
+              },
+              "ReviewStatement": {
+                "type": "string"
+              },
+              "ReviewImages": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "BannerImage": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "imageURL",
+                  "imageDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "string"
+                  },
+                  "imageDescription": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "TrustedByLogos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "imageURL",
+                "imageDescription"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "imageURL": {
+                  "type": "string"
+                },
+                "imageDescription": {
+                  "type": "string"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "width": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "DigitalStreamsCards": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "StreamTitle"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "StreamLogo": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "StreamTitle": {
+                  "type": "string"
+                },
+                "LandingPageURL": {
+                  "type": "string"
+                },
+                "StreamDescription": {
+                  "type": "string"
+                },
+                "StreamValuePoint": {
+                  "type": "string"
+                },
+                "cardBgColorHexCode": {
+                  "type": "string"
+                },
+                "FeaturePoints": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "LearnMore": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "ProductUVP": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "CardTitle",
+                "CardDescription"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Icon": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "CardTitle": {
+                  "type": "string"
+                },
+                "CardDescription": {
+                  "type": "string"
+                },
+                "CTAUrl": {
+                  "type": "string"
+                },
+                "CTAText": {
+                  "type": "string"
+                },
+                "Tag": {
+                  "type": "string"
+                },
+                "OpenNewTab": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "CustomerSuccessStories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "CardTitle",
+                "CardDescription"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Icon": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "CardTitle": {
+                  "type": "string"
+                },
+                "CardDescription": {
+                  "type": "string"
+                },
+                "CTAUrl": {
+                  "type": "string"
+                },
+                "CTAText": {
+                  "type": "string"
+                },
+                "Tag": {
+                  "type": "string"
+                },
+                "OpenNewTab": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "QuickLinks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "CardTitle",
+                "CardDescription"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Icon": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "CardTitle": {
+                  "type": "string"
+                },
+                "CardDescription": {
+                  "type": "string"
+                },
+                "CTAUrl": {
+                  "type": "string"
+                },
+                "CTAText": {
+                  "type": "string"
+                },
+                "Tag": {
+                  "type": "string"
+                },
+                "OpenNewTab": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "CTASection": {
+            "type": "object",
+            "required": [
+              "id",
+              "CTATitle",
+              "CTADescription"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "CTATitle": {
+                "type": "string"
+              },
+              "CTADescription": {
+                "type": "string"
+              },
+              "CTAButtonText": {
+                "type": "string"
+              },
+              "CTAButtonLink": {
+                "type": "string"
+              },
+              "CTABackgroundImage": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "imageURL",
+                  "imageDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "string"
+                  },
+                  "imageDescription": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "TrustedByStatement": {
+            "type": "string"
+          },
+          "OtherSEO": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "TwitterHandle": {
+                "type": "string"
+              },
+              "FacebookHandle": {
+                "type": "string"
+              },
+              "FacebookSite": {
+                "type": "string"
+              },
+              "FacebookAppId": {
+                "type": "string"
+              },
+              "languageAlternates": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "hrefLang": {
+                    "type": "string"
+                  },
+                  "href": {
+                    "type": "string"
+                  }
+                }
+              },
+              "Favicon": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "imageURL",
+                  "imageDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "string"
+                  },
+                  "imageDescription": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "DigitalStreamsCardHeader": {
+            "type": "string"
+          },
+          "DigitalStreamsCardSubHeader": {
+            "type": "string"
+          },
+          "Event": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "page_source": {
+                "type": "string"
+              },
+              "event_name": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "customer_phase": {
+                "type": "string"
+              },
+              "partner_phase": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "customer_score": {
+                "type": "number"
+              },
+              "partner_score": {
+                "type": "number"
+              },
+              "maps": {
+                "type": "number"
+              },
+              "projects": {
+                "type": "number"
+              },
+              "process": {
+                "type": "number"
+              },
+              "labs": {
+                "type": "number"
+              },
+              "mines": {
+                "type": "number"
+              },
+              "interest_score": {
+                "type": "number"
+              }
+            }
+          },
+          "ProductsDevAttributes": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Stream": {
+                "type": "string",
+                "enum": [
+                  "maps",
+                  "projects",
+                  "process",
+                  "labs",
+                  "mines"
+                ]
+              }
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "pageSEO"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "heroNote": {
+                  "type": "string"
+                },
+                "heroImage": {
+                  "type": "component"
+                },
+                "pageSEO": {
+                  "type": "component"
+                },
+                "pageHeaderDetails": {
+                  "type": "component"
+                },
+                "TrustedByLogos": {
+                  "type": "component"
+                },
+                "DigitalStreamsCards": {
+                  "type": "component"
+                },
+                "ProductUVP": {
+                  "type": "component"
+                },
+                "CustomerSuccessStories": {
+                  "type": "component"
+                },
+                "QuickLinks": {
+                  "type": "component"
+                },
+                "CTASection": {
+                  "type": "component"
+                },
+                "TrustedByStatement": {
+                  "type": "string"
+                },
+                "OtherSEO": {
+                  "type": "component"
+                },
+                "DigitalStreamsCardHeader": {
+                  "type": "string"
+                },
+                "DigitalStreamsCardSubHeader": {
+                  "type": "string"
+                },
+                "Event": {
+                  "type": "component"
+                },
+                "ProductsDevAttributes": {
+                  "type": "component"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewIndex": {
+        "required": [
+          "pageSEO"
+        ],
+        "properties": {
+          "heroNote": {
+            "type": "string",
+            "maxLength": 25
+          },
+          "heroImage": {
+            "type": "object",
+            "required": [
+              "id",
+              "imageURL",
+              "imageDescription"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "imageURL": {
+                "type": "string"
+              },
+              "imageDescription": {
+                "type": "string"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              }
+            }
+          },
+          "pageSEO": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "PageTitle": {
+                "type": "string"
+              },
+              "PageDescription": {
+                "type": "string"
+              },
+              "CanonicalTag": {
+                "type": "string"
+              },
+              "ThumbnailImageURL": {
+                "type": "string"
+              },
+              "BreadCrumb": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "item": {
+                      "type": "string"
+                    },
+                    "position": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "PageURL": {
+                "type": "string"
+              }
+            }
+          },
+          "pageHeaderDetails": {
+            "type": "object",
+            "required": [
+              "id",
+              "header",
+              "subHeading"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "header": {
+                "type": "string"
+              },
+              "subHeading": {
+                "type": "string"
+              },
+              "primaryCTA": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "buttonTitle",
+                  "linkURL"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "buttonTitle": {
+                    "type": "string"
+                  },
+                  "linkURL": {
+                    "type": "string"
+                  },
+                  "openNewTab": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "secondaryCTA": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "buttonTitle",
+                  "linkURL"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "buttonTitle": {
+                    "type": "string"
+                  },
+                  "linkURL": {
+                    "type": "string"
+                  },
+                  "openNewTab": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "BelowCTAText": {
+                "type": "string"
+              },
+              "Tag": {
+                "type": "string"
+              },
+              "PrimaryColor": {
+                "type": "string"
+              },
+              "SecondaryColor": {
+                "type": "string"
+              },
+              "ImageURL": {
+                "type": "string"
+              },
+              "header2": {
+                "type": "string"
+              },
+              "ImageWidth": {
+                "type": "string"
+              },
+              "ImageHeight": {
+                "type": "string"
+              },
+              "alternateImageUrl": {
+                "type": "string"
+              },
+              "BannerHeadline": {
+                "type": "string"
+              },
+              "BannerSubHeadline": {
+                "type": "string"
+              },
+              "ReviewStatement": {
+                "type": "string"
+              },
+              "ReviewImages": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "BannerImage": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "imageURL",
+                  "imageDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "string"
+                  },
+                  "imageDescription": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "TrustedByLogos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "imageURL",
+                "imageDescription"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "imageURL": {
+                  "type": "string"
+                },
+                "imageDescription": {
+                  "type": "string"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "width": {
+                  "type": "integer"
+                }
+              }
+            }
+          },
+          "DigitalStreamsCards": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "StreamTitle"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "StreamLogo": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "StreamTitle": {
+                  "type": "string"
+                },
+                "LandingPageURL": {
+                  "type": "string"
+                },
+                "StreamDescription": {
+                  "type": "string"
+                },
+                "StreamValuePoint": {
+                  "type": "string"
+                },
+                "cardBgColorHexCode": {
+                  "type": "string"
+                },
+                "FeaturePoints": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "listItem": {
+                        "type": "string"
+                      },
+                      "PageUrl": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "LearnMore": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "ProductUVP": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "CardTitle",
+                "CardDescription"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Icon": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "CardTitle": {
+                  "type": "string"
+                },
+                "CardDescription": {
+                  "type": "string"
+                },
+                "CTAUrl": {
+                  "type": "string"
+                },
+                "CTAText": {
+                  "type": "string"
+                },
+                "Tag": {
+                  "type": "string"
+                },
+                "OpenNewTab": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "CustomerSuccessStories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "CardTitle",
+                "CardDescription"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Icon": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "CardTitle": {
+                  "type": "string"
+                },
+                "CardDescription": {
+                  "type": "string"
+                },
+                "CTAUrl": {
+                  "type": "string"
+                },
+                "CTAText": {
+                  "type": "string"
+                },
+                "Tag": {
+                  "type": "string"
+                },
+                "OpenNewTab": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "QuickLinks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "CardTitle",
+                "CardDescription"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Icon": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "imageURL",
+                    "imageDescription"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "imageURL": {
+                      "type": "string"
+                    },
+                    "imageDescription": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "width": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "CardTitle": {
+                  "type": "string"
+                },
+                "CardDescription": {
+                  "type": "string"
+                },
+                "CTAUrl": {
+                  "type": "string"
+                },
+                "CTAText": {
+                  "type": "string"
+                },
+                "Tag": {
+                  "type": "string"
+                },
+                "OpenNewTab": {
+                  "type": "boolean"
+                }
+              }
+            }
+          },
+          "CTASection": {
+            "type": "object",
+            "required": [
+              "id",
+              "CTATitle",
+              "CTADescription"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "CTATitle": {
+                "type": "string"
+              },
+              "CTADescription": {
+                "type": "string"
+              },
+              "CTAButtonText": {
+                "type": "string"
+              },
+              "CTAButtonLink": {
+                "type": "string"
+              },
+              "CTABackgroundImage": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "imageURL",
+                  "imageDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "string"
+                  },
+                  "imageDescription": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "TrustedByStatement": {
+            "type": "string"
+          },
+          "OtherSEO": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "TwitterHandle": {
+                "type": "string"
+              },
+              "FacebookHandle": {
+                "type": "string"
+              },
+              "FacebookSite": {
+                "type": "string"
+              },
+              "FacebookAppId": {
+                "type": "string"
+              },
+              "languageAlternates": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "hrefLang": {
+                    "type": "string"
+                  },
+                  "href": {
+                    "type": "string"
+                  }
+                }
+              },
+              "Favicon": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "imageURL",
+                  "imageDescription"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "imageURL": {
+                    "type": "string"
+                  },
+                  "imageDescription": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "integer"
+                  },
+                  "width": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          },
+          "DigitalStreamsCardHeader": {
+            "type": "string"
+          },
+          "DigitalStreamsCardSubHeader": {
+            "type": "string"
+          },
+          "Event": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "page_source": {
+                "type": "string"
+              },
+              "event_name": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "customer_phase": {
+                "type": "string"
+              },
+              "partner_phase": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "customer_score": {
+                "type": "number"
+              },
+              "partner_score": {
+                "type": "number"
+              },
+              "maps": {
+                "type": "number"
+              },
+              "projects": {
+                "type": "number"
+              },
+              "process": {
+                "type": "number"
+              },
+              "labs": {
+                "type": "number"
+              },
+              "mines": {
+                "type": "number"
+              },
+              "interest_score": {
+                "type": "number"
+              }
+            }
+          },
+          "ProductsDevAttributes": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "Stream": {
+                "type": "string",
+                "enum": [
+                  "maps",
+                  "projects",
+                  "process",
+                  "labs",
+                  "mines"
+                ]
+              }
+            }
+          },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Index"
+    }
+  ]
+}

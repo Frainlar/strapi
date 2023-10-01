@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_events_linked_ins",
+  "info": {
+    "name": "linkedIn",
+    "icon": "calendar-plus"
+  },
+  "options": {},
+  "attributes": {
+    "redirectUrl": {
+      "type": "string"
+    },
+    "postId": {
+      "type": "string"
+    }
+  }
+}
